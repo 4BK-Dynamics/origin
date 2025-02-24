@@ -93,3 +93,8 @@ section#birthdays p {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+/* Temporary rule to show any hidden content for debugging */
+* {
+    visibility: visible !important;
+}
