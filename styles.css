@@ -8,7 +8,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh; /* Ensures body takes full height of the screen */
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -43,13 +43,17 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Page content */
+.page-content {
+    flex-grow: 1; /* Ensures the content area grows to fill available space */
+}
+
 /* Section styles */
 section#home-intro, section#about-us, section#birthday-shoutout {
     padding: 20px;
     background-color: white;
     margin: 20px;
     border-radius: 8px;
-    flex-grow: 1; /* Ensures content area grows to take up available space */
 }
 
 section#birthday-shoutout {
