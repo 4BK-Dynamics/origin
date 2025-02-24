@@ -8,7 +8,7 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures body takes full height of the screen */
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -49,16 +49,17 @@ nav ul li a {
 }
 
 /* Section styles */
-section#home-intro, section#about-us, section#birthdays {
+section#home-intro, section#who-we-are, section#about-us, section#birthdays {
     padding: 20px;
     background-color: white;
     margin: 20px;
     border-radius: 8px;
+    border: 1px solid red; /* Debugging border to see if section is rendered */
 }
 
 section#birthdays {
     padding: 30px;
-    background-color: #fff4e1; /* Light background color for birthday shoutouts */
+    background-color: #fff4e1;
     margin: 20px;
     border-radius: 8px;
 }
@@ -71,30 +72,4 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-}
-
-/* Specific styles for the "Birthday Shoutouts" page */
-section#birthdays h2 {
-    font-size: 2rem;
-    color: purple; /* Purple color for the birthday shoutout title */
-}
-
-section#birthdays p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin: 15px 0;
-}
-
-/* Links for navigation */
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Temporary rule to show any hidden content for debugging */
-* {
-    visibility: visible !important;
-}
+    padding: 10px 
