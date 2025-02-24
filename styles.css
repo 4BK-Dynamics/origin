@@ -43,12 +43,20 @@ nav ul li a {
     font-weight: bold;
 }
 
-section#home-intro, section#about-us {
+/* Section styles */
+section#home-intro, section#about-us, section#birthday-shoutout {
     padding: 20px;
     background-color: white;
     margin: 20px;
     border-radius: 8px;
     flex-grow: 1; /* Ensures content area grows to take up available space */
+}
+
+section#birthday-shoutout {
+    padding: 30px;
+    background-color: #fff4e1; /* Light background color for birthday shoutouts */
+    margin: 20px;
+    border-radius: 8px;
 }
 
 h1, h2 {
@@ -63,4 +71,21 @@ footer {
     width: 100%;
     position: relative;
     bottom: 0;
+}
+
+/* Specific styles for the "Birthday Shoutouts" page */
+section#birthday-shoutout h2 {
+    font-size: 2rem;
+    color: purple; /* Purple color for the birthday shoutout title */
+}
+
+section#birthday-shoutout p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+/* Links for navigation */
+nav ul li a:hover {
+    text-decoration: underline;
 }
