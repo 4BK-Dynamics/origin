@@ -46,22 +46,28 @@ nav ul li a {
 /* Page content */
 .page-content {
     flex-grow: 1; /* Ensures the content area grows to fill available space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds consistent space between sections */
 }
 
 /* Section styles */
-section#home-intro, section#who-we-are, section#about-us, section#birthdays {
+section {
     padding: 20px;
     background-color: white;
     margin: 20px;
     border-radius: 8px;
-    border: 1px solid red; /* Debugging border to see if section is rendered */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between elements within the section */
 }
 
-section#birthdays {
-    padding: 30px;
-    background-color: #fff4e1;
-    margin: 20px;
-    border-radius: 8px;
+section#home-intro {
+    background-color: #ffffff;
+}
+
+section#who-we-are {
+    background-color: #ffffff; /* Ensure this section has the same background */
 }
 
 h1, h2 {
@@ -72,4 +78,18 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Specific styles for the "Who We Are" section */
+section#who-we-are {
+    padding-top: 40px; /* Optional padding to space out top content */
+}
+
+/* Links for navigation */
+nav ul li a:hover {
+    text-decoration: underline;
+}
